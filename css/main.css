@@ -22,6 +22,9 @@ img{
 .input:focus-visible{
     outline: 0;
 }
+a{
+   text-decoration: none; 
+}
 .section-small-title{
     font-size: 12px;
     text-transform: uppercase;
@@ -45,6 +48,10 @@ img{
 .card{
     background: transparent;
     border: 0;
+}
+.site{
+    text-transform: capitalize;
+    color: #8252fa;
 }
 .px-45{
     padding: 0 45px;
@@ -587,14 +594,7 @@ footer{
     color: #777777;
     margin-bottom: 30px;
 }
-.site{
-    text-transform: capitalize;
-    color: #8252fa;
-}
-.site:hover {
-    color: #8252fa;
-    text-decoration: none;
-}
+
 .social-list{
     padding: 0;
 }
