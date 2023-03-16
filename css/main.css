@@ -22,7 +22,7 @@ img{
 .input:focus-visible{
     outline: 0;
 }
-a{
+a:hover{
    text-decoration: none; 
 }
 .section-small-title{
@@ -48,9 +48,6 @@ a{
 .card{
     background: transparent;
     border: 0;
-}
-a:hover{
-    text-transform: capitalize;
 }
 .px-45{
     padding: 0 45px;
