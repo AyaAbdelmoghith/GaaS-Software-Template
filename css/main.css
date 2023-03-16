@@ -49,9 +49,8 @@ a{
     background: transparent;
     border: 0;
 }
-.site{
+a:hover{
     text-transform: capitalize;
-    color: #8252fa;
 }
 .px-45{
     padding: 0 45px;
@@ -552,7 +551,6 @@ header{
 }
 .demo .section-main-title{
         text-transform: none;
-
 }
 .demo .section-main-title, .demo .section-desc{
     color: #FFF;
@@ -580,9 +578,7 @@ footer{
     background-size: cover;
     padding-top: 290px;
     padding-bottom: 120px;
-
 }
-
 .footer-title{
     text-transform: capitalize;
     font-size: 20px;
@@ -594,7 +590,6 @@ footer{
     color: #777777;
     margin-bottom: 30px;
 }
-
 .social-list{
     padding: 0;
 }
@@ -641,6 +636,13 @@ footer{
 }
 .footer-desc{
     margin:0;
+}
+.site{
+    text-transform: capitalize;
+    color: #8252fa;
+}
+.site:hover {
+    color: #8252fa;
 }
 /* end footer */
 /* Large devices (desktops, less than 1200px) */
