@@ -22,10 +22,6 @@ img{
 .input:focus-visible{
     outline: 0;
 }
-.colorlib-site:hover {
-    color: #8252fa;
-    text-decoration: none;
-}
 .section-small-title{
     font-size: 12px;
     text-transform: uppercase;
@@ -591,9 +587,13 @@ footer{
     color: #777777;
     margin-bottom: 30px;
 }
-.colorlib-site{
+.site{
     text-transform: capitalize;
     color: #8252fa;
+}
+.site:hover {
+    color: #8252fa;
+    text-decoration: none;
 }
 .social-list{
     padding: 0;
