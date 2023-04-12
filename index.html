@@ -1,540 +1,647 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+h1,h2,h3,h4,h5,h6,.doller-sign,.doller{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+.height-51{
+    height: 51px;
+}
+ul{
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.input:focus-visible{
+    outline: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+.section-small-title,.section-desc,.details-desc,.author-desc,.footer-desc, .footer-copyright{
+    color: #777777;
+}
+.section-small-title,.nav-link, .dropdown-menu .dropdown-item, .btn{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.section-small-title,.section-main-title,.nav-link, .dropdown-menu .dropdown-item{
+    font-weight: 600;
+}
+.section-small-title{
+    letter-spacing: 2px;
+     margin-bottom: 20px;
+}
+.section-main-title{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+.section-desc,.home-desc,.details-desc,.design-text,.price-list div,.star-icon,.demo .secondery-btn,.footer-desc, .footer-copyright,.social-list .icon
+{
+    font-size: 14px;
+}
+.section-desc{
+    line-height: 1.7;
+}
+.card{
+    background: transparent;
+}
+.small-design-card,.plan-card,.feature-body, .specifications,.author-body{
+    text-align: center;
+}
+.py-120{
+    padding: 120px 0;
+}
+.py-0-120{
+    padding: 0 0 120PX;
+}
+.py-120-100{
+    padding: 120px 0 100PX;
+}
+.py-120-45{
+    padding: 120px 0 45PX;
+}
+.py-290-240{
+    padding: 290px 0 240px;
+}
+.py-290{
+    padding: 290px 0;
+}
+.py-75-160{
+    padding: 75px 0 160px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.mb-35{
+    margin-bottom: 35px;
+}
+.mb-80{
+    margin-bottom: 80px;
+}
+.mt-15{
+    margin-top: 15px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-30{
+    margin-top: 30px;
+}
+.bg-img,.line::after,.dropdown-menu:hover .dropdown-item, .dropdown-menu:hover,.main-btn,.secondery-btn:hover,.small-design-card:hover,.design-card .icon,.design-card .active,.plan-card:hover .plan-header, .plan-card:hover .price-card,.email-btn
+{
+    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <link rel="shortcut icon" href="img/favicon.png.webp" type="image/x-icon">
-    <title>GaaS Software</title>
-    <!-- C-D-N -->
-    <!-- Icons font aswsome V 6.2.1 Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css"/>
-</head>
-<body>
-    <!-- start header -->
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png.webp" alt="logo" draggable="false">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav m-auto">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="index.html">home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="feature.html">feature</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link" href="#">
-                        blog
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="blog.html">blog</a>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">contact</a>
-                    </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <button class="btn main-btn my-2 my-sm-0" type="submit">free trial</button>
-                  </form>
-                </div>
-              </nav>
-        </div>
-    </header>
-    <!-- end header -->
-    <!-- start home  -->
-    <section class="home">
-        <div class="container">
-            <div class="row align-item-center">
-                <div class="col-lg-5"><!--col-lg-4 col-md-6-->
-                    <div class="card">
-                        <div class="home-body">
-                          <h1 class="home-title">mass people <br/> oriented software</h1>
-                          <p class="home-desc mb-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. sed do eiusmod tempor incididunt.</p>
-                          <div class="height-51">
-                            <a class="btn home-btn my-2 my-sm-0">get started</a>
-                          </div>
-                        </div><!--./home body-->
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-7 "><!--col-lg-4 col-md-6-->
-                    <div class="card">
-                        <div class="home-img">
-                            <img  class="d-none d-lg-block" src="img/home-right.png" alt="home-img">
-                        </div><!--./card body-->
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- End home -->
-    <!-- start feature -->
-    <section class="feature py-120-100">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="feature-body">
-                            <div class="section-info">
-                                <p class="section-small-title">exclusive Stunning Features</p>
-                                <h2 class="section-main-title">a complete software based website</h2>
-                                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">start free trial now!</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- end feature -->
-    <!-- start details -->
-    <section class="details">
-        <div class="container">
-            <div class="row align-item-center">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="details-img">
-                            <img  class="" src="img/f-img.png" alt="">
-                        </div><!--./details-img-->
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-5 offset-lg-1">
-                    <div class="card">
-                            <div class="details-body">
-                                <div class="details-item">
-                                    <span class="icon fa fa-display"></span>
-                                    <h4  class="details-title">stunning visuals</h4>
-                                    <p  class="details-desc">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
-                                </div>
-                                <div class="details-item">
-                                    <span class="icon fa fa-display"></span>
-                                    <h4 class="details-title">stunning visuals</h4>
-                                    <p class="details-desc">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
-                                </div>
-                                <div class="details-item">
-                                    <span class="icon fa fa-display"></span>
-                                    <h4 class="details-title">stunning visuals</h4>
-                                    <p class="details-desc">Here, I focus on a range of items and features that we use in life without giving them a second thought such as Coca Cola.</p>
-                                </div>
-                            </div>
-                    </div>
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- end details -->
-    <!-- start design  -->
-    <section class="design py-290">
-        <div class="container">
-            <div class="design-body row justify-content-center mb-80">
-                <div class="design-card">
-                    <div class="small-design-card active card">
-                        <span class="active-icon fa fa-display"></span>
-                        <div class="design-text">design trend</div>
-                    </div>
-                </div>
-                <div class="design-card">
-                    <div class="small-design-card card">
-                        <span class="icon fa fa-display"></span>
-                        <div class="design-text">development</div>
-                    </div>
-                </div>
-                <div class="design-card">
-                    <div class="small-design-card">
-                        <span class="icon fa fa-display"></span>
-                        <div class="design-text">delivery</div>
-                    </div>
-                </div>
-            </div><!--./card body-->
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="card">
-                        <div class="design-info">
-                            <div class="section-info">
-                                <p class="section-small-title line">modern daesign trends</p>
-                                <!-- <span class="line"></span> -->
-                                <h2 class="section-main-title">We Believe that <br/> Inner beauty Lasts Long</h2>
-                                <p class="section-desc">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-5 offset-lg-1"><!--col-lg-4 col-md-6-->
-                    <div class="card">
-                        <div class="design-img">
-                            <img  class="" src="img/chart.png" alt="home-img">
-                        </div><!--./card body-->
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- End design -->
-    <!-- start SPECIFICATIONS -->
-    <section class="specifications py-120-45">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="specifications-body">
-                            <div class="section-info">
-                                <p class="section-small-title">features specifications</p>
-                                <h2 class="section-main-title">amazing features that make it awesome!</h2>
-                                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- End SPECIFICATIONS -->
-    <!-- start category -->
-    <section class="category">
-        <div class="container">
-            <div class="row first-category  category-content">
-                <div class="col-lg-4 offset-lg-1"><!--col-lg-4 col-md-6-->
-                    <div class="card">
-                        <div class="category-img">
-                            <img  class="" src="img/f-img1.png" alt="category-img">
-                        </div><!--./card body-->
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-4 offset-lg-2">
-                    <div class="card">
-                        <div class="category-info">
-                            <div class="section-info">
-                                <p class="section-small-title line">modern daesign trends</p>
-                                <h2 class="section-main-title">We Believe that <br/> Inner beauty Lasts Long</h2>
-                                <p class="section-desc">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="border-line d-lg-block d-none"></div>
-                <img class="shape1 d-lg-block d-none" src="img/shape2.png" alt="">
-                <img class="shape2 d-lg-block d-none" src="img/shape2.png" alt="">
-                <img class="shape3 d-lg-block d-none" src="img/shape2.png" alt="">
-            </div><!--./row-->
-                <div class="row second-category category-content">
-                <div class="col-lg-5">
-                    <div class="card">
-                        <div class="category-info">
-                            <div class="section-info">
-                                <p class="section-small-title line">modern daesign trends</p>
-                                <h2 class="section-main-title">We Believe that <br/> Inner beauty Lasts Long</h2>
-                                <p class="section-desc">inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that as women.</p>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-5 offset-lg-2"><!--col-lg-4 col-md-6-->
-                    <div class="card">
-                        <div class="category-img">
-                            <img  class="" src="img/f-img2.png" alt="category-img">
-                        </div><!--./card body-->
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="border-line d-lg-block d-none"></div>
-                <img class="shape1 d-lg-block d-none" src="img/shape2.png" alt="">
-                <img class="shape2 d-lg-block d-none" src="img/shape2.png" alt="">
-                <img class="shape3 d-lg-block d-none" src="img/shape2.png" alt="">
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- end category -->
+.main-btn,.home-desc,.home-btn,.secondery-btn,.details-desc,.small-design-card{
+    font-weight: 500;
+}
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-item .active{
+    color: #8252fa;
+}
 
-    <!-- start plan -->
-    <section class="plan py-290-240">
-        <!-- start SPECIFICATIONS -->
-        <div class="specifications ">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="card">
-                            <div class="specifications-body">
-                                <div class="section-info">
-                                    <p class="section-small-title">features specifications</p>
-                                    <h2 class="section-main-title">amazing features that make it awesome!</h2>
-                                    <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-                        </div><!--./card-->
-                    </div><!--./col-->
-                </div><!--./row-->
-            </div><!--./container-->
-        </div>
-        <!-- End SPECIFICATIONS -->
-        <div class="container">
-            <!-- plan -->
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card plan-card">
-                        <div class="plan-header">
-                            <h4 class="plan-title">real basic</h4>   
-                        </div>
-                        <div class="card-body">
-                            <div class="price-list">
-                                <div><a>2.5 GB space</a></div>
-                                <div><a>secure online transfer</a></div>
-                                <div><a>unlimited styles</a></div>
-                                <div><a>customer service</a></div>
-                            </div>
-                            <div class="price-card">
-                                <div class="price">
-                                    <span class="doller-sign">$</span>
-                                    <span class="doller">39</span>
-                                </div>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">get started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="card plan-card">
-                        <div class="plan-header">
-                            <h4 class="plan-title">real standard</h4>   
-                        </div>
-                        <div class="card-body">
-                            <div class="price-list">
-                                <div><a>10 GB space</a></div>
-                                <div><a>secure online transfer</a></div>
-                                <div><a>unlimited styles</a></div>
-                                <div><a>customer service</a></div>
-                            </div>
-                            <div class="price-card">
-                                <div class="price">
-                                    <span class="doller-sign">$</span>
-                                    <span class="doller">69</span>
-                                </div>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">get started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 m-auto">
-                    <div class="card plan-card">
-                        <div class="plan-header">
-                            <h4 class="plan-title">real unlimited</h4>   
-                        </div>
-                        <div class="card-body">
-                            <div class="price-list">
-                                <div><a>unlimited space</a></div>
-                                <div><a>secure online transfer</a></div>
-                                <div><a>unlimited styles</a></div>
-                                <div><a>customer service</a></div>
-                            </div>
-                            <div class="price-card">
-                                <div class="price">
-                                    <span class="doller-sign">$</span>
-                                    <span class="doller">99</span>
-                                </div>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">get started</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end plan -->
-     <!-- start SPECIFICATIONS -->
-    <section class="specifications ">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="specifications-body">
-                            <div class="section-info">
-                                <p class="section-small-title">user feedback</p>
-                                <h2 class="section-main-title">what our clients say about us</h2>
-                                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- End SPECIFICATIONS -->
-    <!-- start author -->
-    <section class="author py-75-160">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="author-body">
-                            <div class="author-info">
-                                <div class="author-img m-auto">
-                                    <img src="img/quote.png" alt="">
-                                </div>
-                                <h3 class="author-title">Fanny Spencer</h3>
-                                <div class="star-icon">
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <p class="author-desc">As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her faceand She is the host to your journey.</p>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div><!--./row-->
-        </div><!--./container-->
-    </section>
-    <!-- End author -->
+.dropdown-menu:hover .dropdown-item, .dropdown-menu:hover,.plan-card:hover .plan-header, .plan-card:hover .price-card,.small-design-card:hover .design-text,.design-card .active,.design-card .icon,.main-btn,.home-title,.home-desc,.home-btn,.secondery-btn:hover,.demo .section-main-title, .demo .section-desc,.email-btn
+{
+    color: #FFF;
+}
+.line::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    margin-top: 5px;
+}
+header,.home-btn:hover,.small-design-card,.plan-card,.email-form .email-input{
+    background: #FFF;
+}
+.main-btn:hover,.secondery-btn:hover,.plan-card:hover,.plan-card:hover .price-card{
+    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+}
+/* Header */
+.navbar-light .navbar-toggler-icon, .home,.plan,.design,.demo{
+    background-repeat: no-repeat;
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../img/menu-three-outlined-rounded-lines-symbol.png);
+}
+header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+.nav-link{
+    padding: 30px 0px;
+}
+.nav-link, .dropdown-menu .dropdown-item,.social-list .icon{
+    transition: color 0.3s;
+}
+.nav-item {
+    padding: 0 1.406rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-light .navbar-nav .nav-link{
+    transition: all 0.3s ease-in-out;
+}
+.dropdown-menu{
+    display: none;    
+    top:63px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.btn{
+    line-height: 51px;
+    letter-spacing: 1px;
+    padding: 0;
+} 
 
-    <!-- start brand -->
-    <section class="brand py-0-120">
-        <div class="container">
-        <div class="row justify-content-center">
-                <div class="card brand-card">
-                    <div class="brand-img">
-                        <img src="img/logo6.png.webp" alt="">
-                    </div>
-                </div>
-                <div class="card brand-card">
-                    <div class="brand-img">
-                        <img src="img/logo2.png.webp" alt="">
-                    </div>
-                </div>
-                <div class="card brand-card last-phones">
-                    <div class="brand-img">
-                        <img src="img/logo3.png.webp" alt="">
-                    </div>
-                </div>
-                <div class="card brand-card last-tablets">
-                    <div class="brand-img">
-                        <img src="img/logo4.png.webp" alt="">
-                    </div>
-                </div>
-                <div class="card brand-card last-tablets">
-                    <div class="brand-img">
-                        <img src="img/logo5.png.webp" alt="">
-                    </div>
-                </div>
-            
-                <div class="card brand-card last-tablets">
-                    <div class="brand-img">
-                        <img src="img/logo6.png.webp" alt="">
-                    </div>
-                </div>
-        </div>
-    </div>
-    </section>
-    <!-- end brand -->
-    <!-- start demo -->
-    <section class="demo">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="demo-body">
-                            <div class="section-info">
-                                <h2 class="section-main-title">Got Impressed to our features?</h2>
-                                <p class="section-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                                <div class="height-51">
-                                    <a class="btn secondery-btn my-2 my-sm-0">request free demo</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div>
-        </div>
-    </section>
-    <!-- end demo -->
-    <!-- start footer -->
-    <footer>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 col-sm-6">
-                    <div class="card">
-                        <div class="footer-card">
-                            <div class="footer-item">
-                                <h4 class="footer-title mb-35">about me</h4>
-                                <p class="footer-desc">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-                                <div class="footer-copyright mt-30">Copyright &copy;2022 All rights reserved | This template is made with <span class="fa fa-heart heart-icon-footer"></span>  by <a href="https://colorlib.com/" class="site">colorlib</a> 
-                                    and practiced by <a href="https://www.linkedin.com/in/aya-abdelmoghith-b234951a1/?trk=public-profile-join-page" class="site">Eng. Aya Abdelmoghith</a></div>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-5 col-sm-6">
-                    <div class="card">
-                        <div class="footer-card">
-                            <div class="footer-item">
-                                <h4 class="footer-title mb-35">newsletter</h4>
-                                <p class="footer-desc ">Stay updated with our latest trends</p>
-                                <form action="#" class="email-form mt-15">
-                                    <input type="email" name="#" id="#" placeholder="Enter email address" class="email-input">
-                                    <button class="email-btn"><span>&rarr;</span></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-                <div class="col-lg-2">
-                    <div class="card">
-                        <div class="footer-card">
-                            <div class="footer-item">
-                                <h4 class="footer-title mb-35">follow me</h4>
-                                <p class="footer-desc ">Let us be social</p>
-                                <ul class="social-list mt-10">
-                                    <li><a href="#"><span class="fa-brands fa-facebook-f icon"></span></a></li>
-                                    <li><a href="#"><span class="fa-brands fa-twitter icon"></span></a></li>
-                                    <li><a href="#"><span class="fa-brands fa-dribbble icon"></span></a></li>
-                                    <li><a href="#"><span class="fa-brands fa-behance icon"></span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div><!--./card-->
-                </div><!--./col-->
-            </div>
-        </div>
-    </footer>
-    <!-- end footer -->
-    <!-- <div style="margin-top: 300px;"></div> -->
-    <!-- js -->
-    <script src="js/jquery.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
-</html>
+.main-btn{
+    min-width: 145px;
+    transition: background-image 0.9s, box-shadow 0.3s;
+}
+.main-btn:hover,.secondery-btn,.plan-card:hover{
+    background: transparent;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    border:2px solid transparent;
+}
+.btn.focus, .btn:focus{
+    box-shadow: 0 0 0 0;
+}
+/* end Header */
+/* start home */
+.home{
+    background-image: url(../img/home-banner.png);
+    background-position: right center;
+}
+.home-title{
+    margin-top: 0px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 20px;
+}
+.home-desc{
+    line-height: 1.6;
+}
+.home-img{
+    padding-top: 260px;
+    padding-bottom: 142px;
+}
+.home-btn{
+    background: rgba(255, 255, 255, 0.3);
+    min-width: 161px;
+    border: 2px solid #FFF;
+    transition: all 0.3s ease-in-out;
+}
+/* end home */
+/* start feature */
+.secondery-btn{
+    width: 231px;
+    transition: all 0.5s;
+}
+.secondery-btn:hover{
+    min-width: 145px;
+}
+/* end feature */
+/*  start details*/
+.details-item .icon, .details-title,.plan-card .plan-header,.main-btn:hover{
+    color: #222222;
+}
+.details-item .icon{
+    padding-right: 27px;
+    bottom: -10px;
+    font-size: 29px;
+}
+.details-item,.plan-card,.plan-card .plan-header{
+    border-bottom: 1px solid #EEE;
+}
+.details-item{
+    padding: 30px 0;
+}
+.details-title{
+    margin-bottom: 22px;
+}
+.details-desc{
+    margin: 0;
+}
+.details-item:last-child, .price-card:hover .secondery-btn,.demo .secondery-btn,.email-form .email-input,.email-btn,.card,.design-body
+{
+    border: 0;
+}
+/* end details  */
+/* start design */
+.design{
+    background-image: url(../img/tab-bg.jpg.webp);
+    background-position: left center;
+}
+.design-body{
+    border-bottom: 1px solid #eda2f0;
+    padding-bottom: 1px;
+}
+.design-card{
+    padding: 0px 15px;
+}
+.small-design-card{
+    width: 165px;
+    height: 119px;
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px 0 45px;
+}
+.small-design-card:hover{
+    box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
+}
+.design-card .icon{
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.active-icon, .icon{
+    margin: 0px 0 15px;
+    font-size: 30px;
+}
+.design-text{
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in;
+}
+.design-info .section-main-title,.demo .section-main-title{
+    text-transform: none;
+}
+.small-design-card:hover .icon,.price-card:hover .secondery-btn{
+    background-image: linear-gradient(white, white);
+}
+.design-info .secondery-btn, .category-info .secondery-btn{
+    width: 157px;
+}
+
+/* end design */
+/* start SPECIFICATIONS */
+/* end SPECIFICATIONS */
+/* start category */
+.second-category{
+    margin-top: 120px;
+}
+.first-category, .second-category,.details-item .icon,.email-form,.doller-sign{
+    position: relative;
+}
+.border-line{    
+    left: 50%;
+    top: -30px;
+    height: 435px;
+    border: 1px dashed #dbdade;
+}
+.border-line, .shape1,.shape2,.shape3{
+    position: absolute;
+}
+.shape2{
+    left: 42.6%;
+}
+.first-category .shape3{
+    bottom: 0px;
+}
+.second-category .shape3{
+    bottom: -70px;
+}
+.first-category .shape2{
+    top: 30%;
+}
+.second-category .shape2{
+    top: 40%;
+}
+
+.shape1, .shape3{
+    left: 45.1%;
+    width: 10%;
+}
+.shape2{
+    width: 15%;
+}
+
+/* end category */
+/* start plan */
+.plan{
+    background-image: url(../img/pricing-bg.png);
+}
+.plan-card{
+    margin-top: 45px;
+    border-radius: 5px;    
+}
+.plan-card .plan-header{
+    padding: 35px 0 25px;
+}
+.plan-title,.plan-card .plan-header,.details-title,.footer-title{
+    font-size: 20px;
+}
+.price-card .secondery-btn{
+    width: 161px;
+}
+.plan-list li{
+    margin: 0;
+    padding: 0;
+}
+.plan-card .card-body{
+    padding: 30px 35px 45px; 
+}
+.price-list div{
+    padding-bottom: 10px;
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+}
+.price-list a,.home-title,.details-title,.plan-card .plan-header,.site,.footer-title,.section-main-title{
+    text-transform: capitalize;
+}
+.price-list div:last-child{
+    padding-bottom: 30px;
+}
+.price-card{
+    padding: 35px 0 40px;
+    border-radius: 10px;
+    transition: all 0.5s ease 0s;
+}
+.doller-sign{
+    top: -35px;    
+    font-size: 24px;
+}
+.doller{
+    font-size: 72px;
+}
+.plan-card:hover{
+    border-radius: 5px;
+}
+.secondery-btn, .price-card:hover .secondery-btn{
+    color: #22195e;
+}
+.plan-card:hover, .secondery-btn, .main-btn:hover{
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8252fa, #eca2f1);
+}
+/* end plan */
+/* start author */
+.author-img{
+    width: 112px;
+    height: 99px;
+    margin-bottom: 10px;
+}
+.star-icon{
+    color: #ffc000;
+}
+.author-title,.nav-link, .dropdown-menu .dropdown-item,.navbar-light .navbar-nav .nav-link{
+    color: #000;
+}
+.author-title{
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.author-desc{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+/* end author */
+/* start brand */
+.brand-img{
+    width: 80px;  
+    margin: auto;  
+}
+.price-card,.brand-card{
+    background: #FCF8FF;    
+}
+.brand-card{
+    width: 135px;   
+     max-width: 115px;
+    margin: 0 5px;
+    height: 130px;
+    line-height: 130px;
+}
+.brand .container{
+    width: 74%;
+}
+/* end brand */
+/* start demo */
+.demo{
+    background-image: url(../img/impress-bg.png);
+    padding: 290px 0 320px;
+    margin-bottom: -280px;
+}
+.demo .section-desc{
+    margin-bottom: 35px;
+}
+.demo .secondery-btn{
+    width: 229px;
+    transition: 0.3s all;
+    box-shadow: -14.142px 14.142px 20px 0px rgb(0 0 0 / 10%);
+}
+.demo .secondery-btn:hover{
+    background: transparent;
+    border: 2px double #FFF;
+    border-radius: 5px;
+}
+/* end demo */
+/* footer */
+footer,.demo,.design,.home,.navbar-light .navbar-toggler-icon{
+    background-size: cover;
+}
+footer{
+    background-image: url(../img/footer-bg.png); 
+    padding-top: 290px;
+    padding-bottom: 120px;
+}
+.footer-title{
+    font-weight: bold;
+}
+.details-desc,.footer-desc, .footer-copyright{
+    line-height: 24px;
+}
+.footer-desc, .footer-copyright,.section-desc,.star-icon{
+    margin-bottom: 30px;
+}
+.site,.site:hover,.social-list .icon:hover{
+    color: #8252fa;
+}
+.social-list{
+    padding: 0;
+}
+.social-list li,.small-design-card,.details-title{
+    display: inline-block;
+}
+.social-list .icon{
+    padding-right: 10px ;
+}
+.email-form .email-input{
+    padding:15px;
+    border-radius: 30px;
+    width: 90%;
+}
+.social-list .icon,.email-form .email-input,.email-form ::placeholder{
+    color: #CCC;
+}
+.email-btn{
+    position: absolute;
+    right: 55px;
+    top: 4px;
+    border-radius: 50%;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0px;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+}
+.footer-desc{
+    margin:0;
+}
+/* end footer */
+/* Large devices (desktops, less than 1200px) */
+@media screen and (max-width: 1199.98px) { 
+    
+}
+ /* Medium devices (tablets, less than 992px) */
+@media screen and (max-width: 991.98px) { 
+    .navbar-toggler span {
+        
+    }
+    header{
+        background: #000;
+    }
+    .navbar-toggler{
+    border: 0;
+    }
+    .navbar-toggler span {
+        color: rgba(0, 0, 0, 0) !important;
+        background: #000;
+        cursor: pointer;
+    }
+    .home .home-body{
+        margin-top: 70px;
+    } 
+    .navbar-light .navbar-nav .nav-link {
+        color: #FFF;
+    }
+    .nav-item{
+        border-bottom: 1px solid rgb(85 82 82 / 50%);
+        padding: 0;
+    }
+    .nav-item:last-child{
+        border: 0;
+    }
+    .nav-link {
+        padding: 10px 0px;
+        margin: 10 0px;
+    }
+    header .form-inline{
+        display: none;
+    }
+    .home-img{
+        padding: 70px 0px 100px 0px;
+    }
+    .feature,.design, .category,.plan,.brand,.demo, footer{
+        padding: 80px 0;
+    }
+    
+    .details{
+        padding: 0 0 80px;
+    }
+
+    .specifications{
+        padding: 80px 0 0px;
+    }
+    .design,.plan, footer{
+        background-image: none;
+        background-color: #fcf8ff;
+    }
+    .category-img, .design-img{
+        max-width: 350px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .plan .specifications{
+        padding: 0px;
+
+    }
+    .plan-card:last-child{
+        margin: 40px auto 0px;
+    }
+    .author{
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+    .last-tablets{
+        display: none;
+    }
+    .demo{
+        background-image: none;
+        background-color: #a16af7;
+        margin-bottom: 0;
+    }
+    .footer-title{
+        margin-bottom: 12px;
+    }
+    .brand-card {
+        max-width: 125px;
+        margin: 0 10px;
+    }
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    .design-img{
+        max-width: 250px;
+    }
+    .feature,.design, .category,.plan,.brand,.demo, footer{
+        padding: 70px 0;
+    }
+ .details{
+        padding: 0 0 70px;
+    }
+
+    .specifications{
+        padding: 70px 0 0px;
+    }
+ }
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) { 
+    .home-title{
+        font-size: 28px;
+    }
+    .design-card:last-child{
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .small-design-card {   
+        max-width: 130px;
+    } 
+    .brand-card {
+        max-width: 115px;
+        margin: 0 5px;
+    }
+    footer input{
+        margin-bottom: 30px;
+    }
+    .last-phones{
+        display: none;
+    }
+    .section-small-title{
+        font-size: 12px
+    }
+    .section-main-title{
+        font-size: 25px;
+    }
+    .design .section-main-title, .category .section-main-title, .demo .section-main-title{
+        font-size: 36px;
+    }
+ }
