@@ -31,14 +31,15 @@ a:hover{
     font-size: 12px;
     text-transform: uppercase;
 }
+.section-small-title,.section-main-title,.nav-link, .dropdown-menu .dropdown-item{
+    font-weight: 600;
+}
 .section-small-title{
     letter-spacing: 2px;
-    font-weight: 600;
-    margin-bottom: 20px;
+     margin-bottom: 20px;
 }
 .section-main-title{
     font-size: 36px;
-    font-weight: 600;
     margin-bottom: 15px;
 }
 .section-desc,.home-desc,.details-desc,.design-text,.price-list div,.star-icon,.demo .secondery-btn,.footer-desc, .footer-copyright,.social-list .icon
@@ -123,12 +124,12 @@ header,.home-btn:hover,.small-design-card,.plan-card,.email-form .email-input{
     box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
 }
 /* Header */
+.navbar-light .navbar-toggler-icon, .home,.plan,.design,.demo{
+    background-repeat: no-repeat;
+}
 .navbar-light .navbar-toggler-icon{
     background-image: url(../img/menu-three-outlined-rounded-lines-symbol.png);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
-
 header{
     position: fixed;
     z-index: 999;
@@ -137,8 +138,7 @@ header{
 .nav-link{
     padding: 30px 0px;
 }
-.nav-link, .dropdown-menu .dropdown-item{
-    font-weight: 600;
+.nav-link, .dropdown-menu .dropdown-item,.social-list .icon{
     transition: color 0.3s;
 }
 .nav-item {
@@ -181,7 +181,6 @@ header{
 /* start home */
 .home{
     background-image: url(../img/home-banner.png);
-    background-repeat: no-repeat;
     background-position: right center;
 }
 .home-title{
@@ -243,7 +242,6 @@ header{
 /* start design */
 .design{
     background-image: url(../img/tab-bg.jpg.webp);
-    background-repeat: no-repeat;
     background-position: left center;
 }
 .design-body{
@@ -334,7 +332,6 @@ header{
 /* start plan */
 .plan{
     background-image: url(../img/pricing-bg.png);
-    background-repeat: no-repeat;
 }
 .plan-card{
     margin-top: 45px;
@@ -435,7 +432,6 @@ header{
 /* start demo */
 .demo{
     background-image: url(../img/impress-bg.png);
-    background-repeat: no-repeat;
     padding: 290px 0 320px;
     margin-bottom: -280px;
 }
@@ -454,7 +450,7 @@ header{
 }
 /* end demo */
 /* footer */
-footer,.demo,.design,.home{
+footer,.demo,.design,.home,.navbar-light .navbar-toggler-icon{
     background-size: cover;
 }
 footer{
@@ -482,7 +478,6 @@ footer{
 }
 .social-list .icon{
     padding-right: 10px ;
-    transition: color 0.3s;
 }
 .email-form .email-input{
     padding:15px;
