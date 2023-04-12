@@ -2,9 +2,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    /* color: #777777; */
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,.doller-sign,.doller{
     font-family: 'Rajdhani', sans-serif;
     font-weight: 600;
 }
@@ -25,44 +24,41 @@ img{
 a:hover{
     text-decoration: none;
 }
-.section-small-title{
+.section-small-title,.section-desc,.details-desc,.author-desc,.footer-desc, .footer-copyright{
+    color: #777777;
+}
+.section-small-title,.nav-link, .dropdown-menu .dropdown-item, .btn{
     font-size: 12px;
     text-transform: uppercase;
-    color: #777777;
+}
+.section-small-title{
     letter-spacing: 2px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 .section-main-title{
     font-size: 36px;
-    text-transform: capitalize; 
     font-weight: 600;
     margin-bottom: 15px;
 }
-.section-desc{
+.section-desc,.home-desc,.details-desc,.design-text,.price-list div,.star-icon,.demo .secondery-btn,.footer-desc, .footer-copyright,.social-list .icon
+{
     font-size: 14px;
-    color: #777777;
+}
+.section-desc{
     line-height: 1.7;
-    margin-bottom: 30px;
 }
 .card{
     background: transparent;
-    border: 0;
 }
-.px-45{
-    padding: 0 45px;
-}
-.py-410{
-    padding: 410px 0;
+.small-design-card,.plan-card,.feature-body, .specifications,.author-body{
+    text-align: center;
 }
 .py-120{
     padding: 120px 0;
 }
 .py-0-120{
     padding: 0 0 120PX;
-}
-.py-290-125{
-    padding: 290 0 125px;
 }
 .py-120-100{
     padding: 120px 0 100PX;
@@ -72,9 +68,6 @@ a:hover{
 }
 .py-290-240{
     padding: 290px 0 240px;
-}
-.py-240{
-    padding: 240px 0;
 }
 .py-290{
     padding: 290px 0;
@@ -88,8 +81,8 @@ a:hover{
 .mb-35{
     margin-bottom: 35px;
 }
-.mt-35{
-    margin-top: 35px;
+.mb-80{
+    margin-bottom: 80px;
 }
 .mt-15{
     margin-top: 15px;
@@ -100,27 +93,44 @@ a:hover{
 .mt-30{
     margin-top: 30px;
 }
-.mb-80{
-    margin-bottom: 80px;
+.bg-img,.line::after,.dropdown-menu:hover .dropdown-item, .dropdown-menu:hover,.main-btn,.secondery-btn:hover,.small-design-card:hover,.design-card .icon,.design-card .active,.plan-card:hover .plan-header, .plan-card:hover .price-card,.email-btn
+{
+    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
 }
-.align-item-center{
-    align-items: center;
+
+.main-btn,.home-desc,.home-btn,.secondery-btn,.details-desc,.small-design-card{
+    font-weight: 500;
 }
-.justify-content-center{
-    justify-content: center;
+.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-item .active{
+    color: #8252fa;
+}
+
+.dropdown-menu:hover .dropdown-item, .dropdown-menu:hover,.plan-card:hover .plan-header, .plan-card:hover .price-card,.small-design-card:hover .design-text,.design-card .active,.design-card .icon,.main-btn,.home-title,.home-desc,.home-btn,.secondery-btn:hover,.demo .section-main-title, .demo .section-desc,.email-btn
+{
+    color: #FFF;
 }
 .line::after{
     content: "";
     display: block;
     width: 50px;
     height: 1px;
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
     margin-top: 5px;
 }
+header,.home-btn:hover,.small-design-card,.plan-card,.email-form .email-input{
+    background: #FFF;
+}
+.main-btn:hover,.secondery-btn:hover,.plan-card:hover,.plan-card:hover .price-card{
+    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
+}
 /* Header */
+.navbar-light .navbar-toggler-icon{
+    background-image: url(../img/menu-three-outlined-rounded-lines-symbol.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 header{
     position: fixed;
-    background: #FFF;
     z-index: 999;
     width: 100%;
 }
@@ -128,10 +138,7 @@ header{
     padding: 30px 0px;
 }
 .nav-link, .dropdown-menu .dropdown-item{
-    text-transform: uppercase;
-    font-size: 12px;
     font-weight: 600;
-    color: #000;
     transition: color 0.3s;
 }
 .nav-item {
@@ -142,49 +149,30 @@ header{
     padding-left: 0;
 }
 .navbar-light .navbar-nav .nav-link{
-    color: #000;
     transition: all 0.3s ease-in-out;
-}
-.navbar-light .navbar-nav .nav-link:hover,.navbar-light .navbar-nav .nav-item .active{
-    color: #8252fa;
-}
-
-.dropdown-menu:hover .dropdown-item, .dropdown-menu:hover{
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    color: #FFF;
 }
 .dropdown-menu{
     display: none;    
     top:63px;
-
 }
 .dropdown:hover .dropdown-menu{
     display: block;
 }
 .btn{
     line-height: 51px;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 12px;
-    border:0;
     padding: 0;
 } 
+
 .main-btn{
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    color: #FFF;   
     min-width: 145px;
     transition: background-image 0.9s, box-shadow 0.3s;
-    font-weight: 500;
 }
-.main-btn:hover{
+.main-btn:hover,.secondery-btn,.plan-card:hover{
     background: transparent;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8252fa, #eca2f1);
     background-origin: border-box;
     background-clip: content-box, border-box;
     border:2px solid transparent;
-    color: #222222;
-    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
-    
 }
 .btn.focus, .btn:focus{
     box-shadow: 0 0 0 0;
@@ -193,7 +181,6 @@ header{
 /* start home */
 .home{
     background-image: url(../img/home-banner.png);
-    background-size: cover ;
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -203,14 +190,9 @@ header{
     font-weight: 400;
     line-height: 54px;
     margin-bottom: 20px;
-    color: #FFF;
-    text-transform: capitalize;
 }
 .home-desc{
-    font-size: 14px;
-    font-weight: 500;
     line-height: 1.6;
-    color: #FFF;
 }
 .home-img{
     padding-top: 260px;
@@ -220,66 +202,41 @@ header{
     background: rgba(255, 255, 255, 0.3);
     min-width: 161px;
     border: 2px solid #FFF;
-    color: #FFF;
     transition: all 0.3s ease-in-out;
-    font-weight: 500;
-}
-.home-btn:hover{
-    background: #FFF;
 }
 /* end home */
-
 /* start feature */
-
-.feature-body, .specifications{
-    text-align: center;
-}
 .secondery-btn{
     width: 231px;
-    background: transparent;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border:2px solid transparent;  
-    color: #22195e;
     transition: all 0.5s;
-    font-weight: 500;
 }
 .secondery-btn:hover{
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    color: #FFF;   
     min-width: 145px;
-    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
 }
 /* end feature */
 /*  start details*/
-
+.details-item .icon, .details-title,.plan-card .plan-header,.main-btn:hover{
+    color: #222222;
+}
 .details-item .icon{
     padding-right: 27px;
-    position: relative;
     bottom: -10px;
     font-size: 29px;
-    color: #222222;
+}
+.details-item,.plan-card,.plan-card .plan-header{
+    border-bottom: 1px solid #EEE;
 }
 .details-item{
     padding: 30px 0;
-    border-bottom: 1px solid #eeeeee;
 }
 .details-title{
-    font-size: 20px;
-    color: #222222;
-    display: inline-block;
-    text-transform: capitalize;
     margin-bottom: 22px;
 }
 .details-desc{
     margin: 0;
-    line-height: 24px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #777777;
 }
-.details-item:last-child{
+.details-item:last-child, .price-card:hover .secondery-btn,.demo .secondery-btn,.email-form .email-input,.email-btn,.card,.design-body
+{
     border: 0;
 }
 /* end details  */
@@ -288,10 +245,8 @@ header{
     background-image: url(../img/tab-bg.jpg.webp);
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: cover ;
 }
 .design-body{
-    border: none;
     border-bottom: 1px solid #eda2f0;
     padding-bottom: 1px;
 }
@@ -301,31 +256,18 @@ header{
 .small-design-card{
     width: 165px;
     height: 119px;
-    background: rgb(255, 255, 255);
-    display: inline-block;
-    text-align: center;
     text-transform: uppercase;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 30px 0 45px;
-    font-weight: 500;    
 }
 .small-design-card:hover{
-    background:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
     box-shadow: 0px 10px 30px 0px rgb(0 0 0 / 10%);
 }
 .design-card .icon{
-    color: #FFF;
-}
-.design-card .icon{
-    background:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.design-card .active{
-    color: #FFF;
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
 }
 .active-icon, .icon{
     margin: 0px 0 15px;
@@ -333,23 +275,13 @@ header{
 }
 .design-text{
     letter-spacing: 1px;
-    font-size: 14px;
     transition: color 0.3s ease-in;
 }
-.design-info .section-main-title{
+.design-info .section-main-title,.demo .section-main-title{
     text-transform: none;
 }
-.small-design-card:hover .design-text {
-    color: #FFF;
-}
-.small-design-card:hover .icon{
+.small-design-card:hover .icon,.price-card:hover .secondery-btn{
     background-image: linear-gradient(white, white);
-}
-.design-info .section-info{
-    text-align: left;
-}
-.design-img{
-    text-align: right;
 }
 .design-info .secondery-btn, .category-info .secondery-btn{
     width: 157px;
@@ -362,7 +294,7 @@ header{
 .second-category{
     margin-top: 120px;
 }
-.first-category, .second-category{
+.first-category, .second-category,.details-item .icon,.email-form,.doller-sign{
     position: relative;
 }
 .border-line{    
@@ -389,8 +321,7 @@ header{
 .second-category .shape2{
     top: 40%;
 }
-.shape2{
-}
+
 .shape1, .shape3{
     left: 45.1%;
     width: 10%;
@@ -403,27 +334,16 @@ header{
 /* start plan */
 .plan{
     background-image: url(../img/pricing-bg.png);
-    /* padding: 400px 0; */
-     background-repeat: no-repeat;
-    /*background-position: left center;
-    background-size: cover ; */
+    background-repeat: no-repeat;
 }
 .plan-card{
-    border: 1px solid #eee;
-    background: #FFF;
     margin-top: 45px;
     border-radius: 5px;    
-    text-align: center;    
-
 }
 .plan-card .plan-header{
     padding: 35px 0 25px;
-    text-transform: capitalize;
-    border-bottom: 1px solid #eee;
-    font-size: 20px;
-    color: #222222;
 }
-.plan-title{
+.plan-title,.plan-card .plan-header,.details-title,.footer-title{
     font-size: 20px;
 }
 .price-card .secondery-btn{
@@ -435,59 +355,39 @@ header{
 }
 .plan-card .card-body{
     padding: 30px 35px 45px; 
-
 }
 .price-list div{
     padding-bottom: 10px;
-    font-size: 14px;
     color: #666666;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
 }
-.price-list a{
+.price-list a,.home-title,.details-title,.plan-card .plan-header,.site,.footer-title,.section-main-title{
     text-transform: capitalize;
 }
 .price-list div:last-child{
     padding-bottom: 30px;
 }
 .price-card{
-    background: #FCF8FF;
     padding: 35px 0 40px;
     border-radius: 10px;
     transition: all 0.5s ease 0s;
 }
 .doller-sign{
-    position: relative;
     top: -35px;    
-    font-family: "Rajdhani", sans-serif;
     font-size: 24px;
-    font-weight: 600;
 }
 .doller{
     font-size: 72px;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-}
-.plan-card:hover .plan-header, .plan-card:hover .price-card{
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    color: #FFF;
 }
 .plan-card:hover{
-    background: transparent;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8252fa, #eca2f1);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    border:2px solid transparent;
-    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
     border-radius: 5px;
 }
-.plan-card:hover .price-card{
-    box-shadow: 0px 10px 30px rgb(130 82 250 / 20%);
-}
-.price-card:hover .secondery-btn{
-    border: 0;
-    background-image: linear-gradient(white, white);
+.secondery-btn, .price-card:hover .secondery-btn{
     color: #22195e;
+}
+.plan-card:hover, .secondery-btn, .main-btn:hover{
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #8252fa, #eca2f1);
 }
 /* end plan */
 /* start author */
@@ -498,25 +398,19 @@ header{
 }
 .star-icon{
     color: #ffc000;
-    font-size: 14px;
-    margin-bottom: 30px;
-
 }
-.author-body{
-    text-align: center;
+.author-title,.nav-link, .dropdown-menu .dropdown-item,.navbar-light .navbar-nav .nav-link{
+    color: #000;
 }
 .author-title{
     margin-bottom: 10px;
-    color: #000;
     font-size: 18px;
     margin-bottom: 10px;
-
 }
 .author-desc{
     font-size: 18px;
     font-weight: 400;
     font-style: italic;
-    color: #777777;
 }
 /* end author */
 /* start brand */
@@ -524,41 +418,32 @@ header{
     width: 80px;  
     margin: auto;  
 }
+.price-card,.brand-card{
+    background: #FCF8FF;    
+}
 .brand-card{
     width: 135px;   
      max-width: 115px;
     margin: 0 5px;
     height: 130px;
-    background: #FCF8FF;    
     line-height: 130px;
 }
 .brand .container{
     width: 74%;
-    /* margin: auto; */
 }
 /* end brand */
 /* start demo */
 .demo{
     background-image: url(../img/impress-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
     padding: 290px 0 320px;
     margin-bottom: -280px;
-    text-align: center;
-}
-.demo .section-main-title{
-        text-transform: none;
-}
-.demo .section-main-title, .demo .section-desc{
-    color: #FFF;
 }
 .demo .section-desc{
     margin-bottom: 35px;
 }
 .demo .secondery-btn{
     width: 229px;
-    border: 0;
-    font-size: 14px;
     transition: 0.3s all;
     box-shadow: -14.142px 14.142px 20px 0px rgb(0 0 0 / 10%);
 }
@@ -569,51 +454,42 @@ header{
 }
 /* end demo */
 /* footer */
+footer,.demo,.design,.home{
+    background-size: cover;
+}
 footer{
     background-image: url(../img/footer-bg.png); 
-    /* padding: 290px 0 125px; */
-    background-size: cover;
     padding-top: 290px;
     padding-bottom: 120px;
 }
 .footer-title{
-    text-transform: capitalize;
-    font-size: 20px;
     font-weight: bold;
 }
-.footer-desc, .footer-copyright{
-    font-size: 14px;
+.details-desc,.footer-desc, .footer-copyright{
     line-height: 24px;
-    color: #777777;
+}
+.footer-desc, .footer-copyright,.section-desc,.star-icon{
     margin-bottom: 30px;
+}
+.site,.site:hover,.social-list .icon:hover{
+    color: #8252fa;
 }
 .social-list{
     padding: 0;
 }
-.social-list li{
+.social-list li,.small-design-card,.details-title{
     display: inline-block;
 }
 .social-list .icon{
-    font-size: 14px;
-    color: #CCC;
     padding-right: 10px ;
     transition: color 0.3s;
 }
-.social-list .icon:hover{
-    color: #8252fa;
-}
-.email-form{
-    position: relative;
-}
 .email-form .email-input{
-    border: 0;
     padding:15px;
-    color: #CCC;
     border-radius: 30px;
-    background: #FFF;
     width: 90%;
 }
-.email-form ::placeholder{
+.social-list .icon,.email-form .email-input,.email-form ::placeholder{
     color: #CCC;
 }
 .email-btn{
@@ -623,23 +499,13 @@ footer{
     border-radius: 50%;
     outline: none !important;
     box-shadow: none !important;
-    border: 0;
     padding: 0px;
     width: 46px;
     height: 46px;
     cursor: pointer;
-    color: #fff;
-    background-image:linear-gradient(to right, #8252fa 0%, #eca2f1 100%), radial-gradient(circle at top left, #8252fa, #eca2f1);
 }
 .footer-desc{
     margin:0;
-}
-.site{
-    text-transform: capitalize;
-    color: #8252fa;
-}
-.site:hover {
-    color: #8252fa;
 }
 /* end footer */
 /* Large devices (desktops, less than 1200px) */
@@ -648,6 +514,9 @@ footer{
 }
  /* Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) { 
+    .navbar-toggler span {
+        
+    }
     header{
         background: #000;
     }
@@ -655,18 +524,9 @@ footer{
     border: 0;
     }
     .navbar-toggler span {
-        /* display: block;
-        width: 25px;
-        height: 3px; */
-        color: rgba(0, 0, 0, 0.6) !important;
-        background: #FFF;
-        /* margin: auto; */
-        /* margin-bottom: 4px;
-        transition: all 400ms linear; */
+        color: rgba(0, 0, 0, 0) !important;
+        background: #000;
         cursor: pointer;
-    }
-    header .active{
-        /* margin-top: 20px; */
     }
     .home .home-body{
         margin-top: 70px;
@@ -746,14 +606,6 @@ footer{
     .design-img{
         max-width: 250px;
     }
-    /* .design-card:last-child{
-        margin-top: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .small-design-card {   
-        max-width: 130px;
-    } */
     .feature,.design, .category,.plan,.brand,.demo, footer{
         padding: 70px 0;
     }
@@ -798,8 +650,3 @@ footer{
         font-size: 36px;
     }
  }
-
-
-
-
-
