@@ -8,10 +8,10 @@ The site is live at: </br>
 https://ayaabdelmoghith.github.io/GaaS-Software-Template/ </br><br/>
 Video:
 
-https://user-images.githubusercontent.com/105630381/225415939-4c8469ee-5cf9-4f47-ad43-d256c60d8a12.mp4
+https://user-images.githubusercontent.com/105630381/231510563-52abb009-0ddc-4bc2-b09e-77f396621fcd.mp4
 
-Best of luck.
-Please don’t hesitate to contact me with any concerns.
+
+Thank you for your time and feel free to share your feedback and opinions about the design.
 
 <br/>My LinkedIn account: https://www.linkedin.com/in/aya-abdelmoghith-b234951a1 <br/>
 My Email address: ayaabdelmoghith@gmail.com
